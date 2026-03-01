@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev:frontend":"npm run dev --prefix frontend",
-    "migrate:backend":"yarn prisma generate --prefix backend && yarn prisma migrate dev --prefix backend",
+    "migrate:backend":"npm run prisma generate --prefix backend && npm run prisma migrate dev --prefix backend",
     "dev:backend":"npm run dev --prefix backend",
     "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
     "build:frontend":"npm run build --prefix frontend",
